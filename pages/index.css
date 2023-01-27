@@ -1,0 +1,48 @@
+/* Стили проекта */
+
+
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/page/page.css);
+
+
+/* Шапка включающая меню */
+@import url(../blocks/header/header.css);
+
+
+
+
+/* Самый старший блок main в котрый будет завернут весь контент */
+@import url(../blocks/content/content.css);
+
+
+
+
+/* Первый блок Курс по фотографии */
+@import url(../blocks/course/course.css);
+
+
+
+
+/* Второй блок Изучите композицию */
+@import url(../blocks/composition/composition.css);
+
+
+
+
+/* Третий блок Настройка, Сьемка, Обработка */
+@import url(../blocks/actions/actions.css);
+
+
+
+
+/* Четвертый блок Научим находить заказы */
+@import url(../blocks/orders/orders.css);
+
+
+
+
+
+/* Блок footer */
+@import url(../blocks/footer/footer.css);
