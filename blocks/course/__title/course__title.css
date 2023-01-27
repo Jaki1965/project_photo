@@ -1,0 +1,9 @@
+
+.course__title {
+  border: 1px solid green;
+  margin: 0;
+  max-width: 624px;
+  line-height: 110px;
+  font-size: 100px;
+  font-weight: 400;
+}

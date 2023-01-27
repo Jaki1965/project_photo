@@ -1,0 +1,6 @@
+.course__image {
+  max-width: 642px;
+  justify-self: right;
+  grid-row: 1/4;
+  grid-column: 2/3;
+}

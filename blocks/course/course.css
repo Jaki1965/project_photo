@@ -1,2 +1,10 @@
 /* Самые общие стили блока Курс по фотографии */
 
+.course {
+  padding: 50px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto) 49px;
+  grid-column-gap: 76px;
+}

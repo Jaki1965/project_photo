@@ -9,6 +9,8 @@
 ## Ветка main
 * Создание пустых папок и файлов под наполнение
 * Добавлены картинки и вексторные изображения
+* На первый раз сверстан блок Курс по фотографии для 1440px. Буду пробовать его на pixel perfect
+
 
 Ссылка на макет Figma [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?t=FgWAfQ4qPhrS7ybL-6)
 

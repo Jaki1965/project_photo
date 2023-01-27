@@ -1,0 +1,10 @@
+
+.course__subtitle {
+  border: 1px solid green;
+  margin: 0;
+  margin-left: 4px;
+  max-width: 469px;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+}

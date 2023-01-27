@@ -21,6 +21,10 @@
 
 /* Первый блок Курс по фотографии */
 @import url(../blocks/course/course.css);
+@import url(../blocks/course/__title/course__title.css);
+@import url(../blocks/course/__image/course__image.css);
+@import url(../blocks/course/__subtitle/course__subtitle.css);
+@import url(../blocks/course/__button/course__button.css);
 
 
 

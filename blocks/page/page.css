@@ -1,2 +1,8 @@
 /* самые общие стили всей страницы */
 
+.page {
+  border: 2px solid blue;
+  margin: auto;
+  max-width: 1440px;
+  font-family: 'Roboto', "Arial", sans-serif;;
+}
