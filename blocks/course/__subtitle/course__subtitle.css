@@ -2,6 +2,7 @@
 .course__subtitle {
   border: 1px solid green;
   margin: 0;
+  margin-top: 60px;
   margin-left: 4px;
   max-width: 469px;
   line-height: 28px;

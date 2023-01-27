@@ -5,6 +5,6 @@
   border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto) 49px;
+  grid-template-rows:  min-content 1fr min-content;
   grid-column-gap: 76px;
 }
