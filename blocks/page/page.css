@@ -3,6 +3,12 @@
 .page {
   border: 2px solid blue;
   margin: auto;
-  max-width: 1440px;
+  width: 1440px; /* нужно ставить max-width, но так работает лучше */
   font-family: 'Roboto', "Arial", sans-serif;;
+}
+
+@media screen and (max-width: 999px) {
+  .page {
+    width: 768px;
+  }
 }

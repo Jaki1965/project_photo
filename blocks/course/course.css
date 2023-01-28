@@ -2,9 +2,19 @@
 
 .course {
   padding: 50px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows:  min-content 1fr min-content;
+  /* grid: min-content 1fr min-content / repeat(2, auto);  */ /* сокращенная запись */
   grid-column-gap: 76px;
+}
+
+@media screen and (max-width: 999px) {
+  .course {
+    padding: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto); /*min-content 1fr min-content min-content; */
+    grid-row-gap: 60px;
+  }
 }
