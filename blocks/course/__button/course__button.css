@@ -7,10 +7,8 @@
   font-weight: 400;
   justify-self: start;
   align-self: end;
-  /* padding-left: 68px;
-  padding-right: 67px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
   width: 228px;
   height: 49px;
   cursor: pointer;
@@ -20,4 +18,15 @@
 
 .course__button:hover {
   font-weight: 500;
+}
+
+
+@media screen and (max-width: 499px) {
+  .course__button {
+    line-height: 28px;
+    font-size: 14px;
+    width: 169px;
+    height: 40px;
+
+  }
 }

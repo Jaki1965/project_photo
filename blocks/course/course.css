@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows:  min-content 1fr min-content;
-  /* grid: min-content 1fr min-content / repeat(2, auto);  */ /* сокращенная запись */
   grid-column-gap: 76px;
 }
 
@@ -14,7 +13,17 @@
   .course {
     padding: 40px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto); /*min-content 1fr min-content min-content; */
+    grid-template-rows: repeat(4, auto); 
     grid-row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .course {
+    padding-top: 14px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-row-gap: 30px;
   }
 }

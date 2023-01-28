@@ -14,6 +14,7 @@
 * Анимирована кнопка
 * Сделан корректный перелм на 768px с заменой последовательности блоков. Терепр буду проверять на PixelPerfect
 * Для блока Курс по фотографии сделан PixelPerfect
+* Для блока Курс по фотографии сделан PixelPerfect на 320 и все переломы. Блок Курс по фотографии - ЗАКОНЧЕН
 
 
 Ссылка на макет Figma [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?t=FgWAfQ4qPhrS7ybL-6)

@@ -8,3 +8,12 @@
   font-weight: 400;
   
 }
+
+
+@media screen and (max-width: 499px) {
+  .course__title {
+    max-width: 282px;
+    line-height: 56px;
+    font-size: 47px;
+  }
+}

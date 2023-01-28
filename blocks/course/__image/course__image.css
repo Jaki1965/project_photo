@@ -14,3 +14,11 @@
     
   }
 }
+
+@media screen and (max-width: 499px) {
+  .course__image {
+    max-width: 280px;
+    margin-top: 30px;
+
+  }
+}
