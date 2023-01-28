@@ -7,10 +7,12 @@
   font-weight: 400;
   justify-self: start;
   align-self: end;
-  padding-left: 68px;
-  padding-right: 67px;
+  /* padding-left: 68px;
+  padding-right: 67px; */
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 228px;
+  height: 49px;
   cursor: pointer;
   transition: 0.1s;
  
