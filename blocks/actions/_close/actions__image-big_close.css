@@ -1,0 +1,10 @@
+/* */
+.actions__image-big_close {
+  display: block;
+}
+
+@media screen and (max-width: 999px) {
+  .actions__image-big_close {
+    display: none;
+  }
+}

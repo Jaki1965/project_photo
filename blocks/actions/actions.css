@@ -11,3 +11,12 @@
   grid-column-gap: 76px; 
 
 }
+
+@media screen and (max-width: 999px) {
+  .actions {
+    padding: 40px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto) 28px repeat(2, auto);
+    grid-column-gap: 0px; 
+  }
+}

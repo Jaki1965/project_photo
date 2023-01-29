@@ -41,18 +41,19 @@
 @import url(../blocks/actions/__caption/actions__caption.css);
 @import url(../blocks/actions/__title/actions__title.css);
 @import url(../blocks/actions/__title-item/actions__title-item.css);
+@import url(../blocks/actions/__image/.actions__image-big.css);
+@import url(../blocks/actions/_close/actions__image-big_close.css);
+@import url(../blocks/actions/__image-smal/actions__image-smal.css);
+@import url(../blocks/actions/_open/actions__image-smal_open.css);
 @import url(../blocks/actions/__caption/actions__caption.css);
 @import url(../blocks/review/review.css);
+@import url(../blocks/actions/__line/actions__line.css);
 @import url(../blocks/review/_column/review_column_first.css);
 @import url(../blocks/review/_column/review_column_second.css);
 @import url(../blocks/review/__info/review__info.css);
 @import url(../blocks/review/__name/review__name.css);
 @import url(../blocks/review/__nickname/review__nickname.css);
 
-
-
-
-@import url(../blocks/actions/__image/actions__image.css);
 
 
 

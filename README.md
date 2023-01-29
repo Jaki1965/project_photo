@@ -20,6 +20,7 @@
 
 * Блок - НАСТРОЙКА, СЪЕМКА, ОБРАБОТКА
 * Сверстан и проверен на PixelPerfect вариант 1440px
+* Сверстан и проверен на PixelPerfect вариант 768px
 
 
 Ссылка на макет Figma [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?t=FgWAfQ4qPhrS7ybL-6)
