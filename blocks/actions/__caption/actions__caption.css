@@ -1,0 +1,11 @@
+/* стили подписи - камера */
+.actions__caption {
+  /* border: 1px solid yellowgreen; */
+  margin: 0;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}

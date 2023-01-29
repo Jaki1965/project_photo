@@ -1,7 +1,7 @@
 /* самые общие стили всей страницы */
 
 .page {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin: auto;
   width: 1440px; /* нужно ставить max-width, но так работает лучше */
   font-family: 'Roboto', "Arial", sans-serif;;

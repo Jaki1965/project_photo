@@ -1,0 +1,7 @@
+/* стили блока отзывы */
+.review {
+  /* border: 1px solid rgb(46, 93, 140); */
+  margin: 0;
+  margin-top: 180px;
+  max-width: 526px;
+}

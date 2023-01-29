@@ -1,0 +1,12 @@
+/* стили сообщения - камера */
+.actions__camera {
+  /* border: 1px solid orange; */
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
