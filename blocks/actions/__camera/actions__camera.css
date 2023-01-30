@@ -17,3 +17,12 @@
     margin-left: 6px;
   }
 }
+@media screen and (max-width: 499px) {
+  .actions__camera {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}

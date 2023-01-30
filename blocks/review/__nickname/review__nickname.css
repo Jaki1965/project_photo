@@ -1,4 +1,4 @@
-/* */
+
 .review__nickname {
   /* border: 1px solid yellow; */
   margin: 0;
@@ -6,4 +6,12 @@
   line-height: 24px;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 499px) {
+  .review__nickname {
+    margin-top: 6px;
+    line-height: 12px;
+    font-size: 12px;
+  }
 }

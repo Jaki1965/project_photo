@@ -1,7 +1,7 @@
 /* Самые общие стили блока actions */
 
 .actions {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   padding: 50px;
   color: #fff;
   background: #000;
@@ -18,5 +18,13 @@
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto) 28px repeat(2, auto);
     grid-column-gap: 0px; 
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .actions {
+    padding: 20px;
+    grid-template-rows: repeat(2, auto) 20px repeat(2, auto);
+
   }
 }

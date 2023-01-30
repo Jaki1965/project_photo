@@ -6,3 +6,11 @@
   font-size: 122px;
   font-weight: 400;
 }
+
+
+@media screen and (max-width: 499px) {
+  .actions__title-item {
+    line-height: 56.25px;
+    font-size: 48px;
+  }
+}

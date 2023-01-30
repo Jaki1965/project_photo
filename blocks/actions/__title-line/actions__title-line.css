@@ -1,0 +1,14 @@
+
+.actions__title-line {
+  margin: 0;
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .actions__title-line {
+    display: block;
+    margin-top: 20px;
+    border-bottom: 1px solid #fff;
+
+  }
+}
