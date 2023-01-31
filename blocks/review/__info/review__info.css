@@ -1,0 +1,16 @@
+
+.review__info {
+  margin: 0;
+  max-width: 526px;
+  line-height: 43.2px;
+  font-size: 43px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 499px) {
+  .review__info {
+    max-width: 280px;
+    line-height: 26px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,19 @@
+/* модификтор блока для размещения в первой клонке */
+
+.review_column_first {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+@media screen and (max-width: 999px) {
+  .review_column_first {
+    grid-row: 4/5;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .review_column_first {
+    margin-bottom: 30px;
+  }
+}

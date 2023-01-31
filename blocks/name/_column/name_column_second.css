@@ -1,0 +1,5 @@
+/* */
+.name_column_second {
+  grid-column: 2/3;
+  grid-row: 7/8;
+}

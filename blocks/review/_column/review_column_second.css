@@ -1,0 +1,21 @@
+/* модификатор блока для размещения во второй колонке */
+
+.review_column_second {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  
+}
+
+@media screen and (max-width: 999px) {
+  .review_column_second {
+    grid-row: 5/6;
+    grid-column: 1/2;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .review_column_second {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,10 @@
+
+.actions__image-smal_open {
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .actions__image-smal_open {
+    display: block;
+  }
+}

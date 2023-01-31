@@ -1,2 +1,20 @@
 /* самые общие стили всей страницы */
 
+.page {
+  /* border: 2px solid blue; */
+  margin: auto;
+  width: 1440px; /* нужно ставить max-width, но так работает лучше */
+  font-family: 'Roboto', "Arial", sans-serif;;
+}
+
+@media screen and (max-width: 999px) {
+  .page {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .page {
+    width: 320px;
+  }
+}

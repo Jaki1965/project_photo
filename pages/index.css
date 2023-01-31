@@ -21,6 +21,10 @@
 
 /* Первый блок Курс по фотографии */
 @import url(../blocks/course/course.css);
+@import url(../blocks/course/__title/course__title.css);
+@import url(../blocks/course/__image/course__image.css);
+@import url(../blocks/course/__subtitle/course__subtitle.css);
+@import url(../blocks/course/__button/course__button.css);
 
 
 
@@ -33,6 +37,23 @@
 
 /* Третий блок Настройка, Сьемка, Обработка */
 @import url(../blocks/actions/actions.css);
+@import url(../blocks/actions/__title-line/actions__title-line.css);
+@import url(../blocks/actions/__camera/actions__camera.css);
+@import url(../blocks/actions/__caption/actions__caption.css);
+@import url(../blocks/actions/__title/actions__title.css);
+@import url(../blocks/actions/__title-item/actions__title-item.css);
+@import url(../blocks/actions/__image-big/actions__image-big.css);
+@import url(../blocks/actions/_close/actions__image-big_close.css);
+@import url(../blocks/actions/__image-smal/actions__image-smal.css);
+@import url(../blocks/actions/_open/actions__image-smal_open.css);
+@import url(../blocks/actions/__caption/actions__caption.css);
+@import url(../blocks/review/review.css);
+@import url(../blocks/actions/__line/actions__line.css);
+@import url(../blocks/review/_column/review_column_first.css);
+@import url(../blocks/review/_column/review_column_second.css);
+@import url(../blocks/review/__info/review__info.css);
+@import url(../blocks/review/__name/review__name.css);
+@import url(../blocks/review/__nickname/review__nickname.css);
 
 
 
