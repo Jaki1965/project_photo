@@ -1,0 +1,11 @@
+/* модификатор стрелки на разрешение 320 */
+.header__arrow_midle {
+  display: none;
+}
+
+@media screen and (max-width: 499px) {
+  .header__arrow_midle {
+    display: block;
+    align-self: center;
+  }
+}

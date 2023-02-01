@@ -1,0 +1,29 @@
+/* стили основного меню - основные*/
+.header__basic {
+  /* border: 1px solid white; */
+  max-width: 1440px;
+  min-height: 84px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #DF2626;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+@media screen and (max-width: 999px) {
+  .header__basic {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header__basic {
+    min-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

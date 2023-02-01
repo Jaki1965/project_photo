@@ -15,6 +15,32 @@
 
     <!-- Шапка включающая меню -->
     <header class="header">
+      <!-- сновное меню -->
+      <div class="header__basic">
+        <img class="header__arrow" src="./images/Vector_header.svg" alt="Вращающаяся стрелка">
+        <img class="header__lines" src="./images/Group_line_menu.svg" alt="Кнопка перехода в меню">
+        <nav class="menu menu_close">
+          <ul class="menu__list ">
+            <li><a class="menu__list-item" href="#">Композиция</a></li>
+            <li><a class="menu__list-item" href="#actions">Камера</a></li>
+            <li><a class="menu__list-item" href="#">Поиск заказов</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- открывающееся меню -->
+      <div class="header__midle">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a class="menu__list-item" href="#">Композиция</a></li>
+            <li><a class="menu__list-item" href="#actions">Камера</a></li>
+            <li><a class="menu__list-item" href="#">Поиск заказов</a></li>
+          </ul>
+        </nav>
+        <div class="header__signs">
+          <img class="header__arrow header__arrow_midle" src="./images/Vector_header.svg" alt="Вращающаяся стрелка">
+          <img class="header__cross" src="./images/Group 10_cross.svg" alt="Кнопка закрытие меню">
+        </div>
+      </div>
       
     </header>
 
@@ -35,7 +61,7 @@
       </section>
 
       <!-- Третий блок Настройка, Сьемка, Обработка -->
-      <section class="actions">
+      <section class="actions" name="actions">
         <div class="actions__title">
           <p class="actions__title-line"></p>
           <p class="actions__camera">камера</p>

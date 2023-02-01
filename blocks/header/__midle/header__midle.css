@@ -1,0 +1,30 @@
+/* стили открывающегося второго меню на 768 px */
+.header__midle {
+  display: none;
+  
+}
+
+@media screen and (max-width: 999px) {
+  .header__midle {
+    color: #fff;
+    background: #DF2626;
+    min-height: 84px;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 499px) {
+  .header__midle {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, fit-content);
+    row-gap: 26px;
+  }
+}
