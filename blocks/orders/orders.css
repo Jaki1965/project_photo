@@ -1,4 +1,22 @@
 /* самые общие стили блока orders */
+.orders {
+  background: #F4F4F4;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content auto;
+}
 
+@media screen and (max-width: 999px) {
+  .orders {
+   padding: 40px;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, auto);
+  }
+}
 
-
+@media screen and (max-width: 499px) {
+  .orders {
+    padding: 20px;
+  }
+}

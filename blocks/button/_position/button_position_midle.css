@@ -1,17 +1,17 @@
-/* модификатор - стили кнопки - записаться */
-.button_write-down {
+/* позиционирование средней кнопки */
+.button_position_midle {
   align-self: end;
  
 }
 
 @media screen and (max-width: 999px) {
-  .button_write-down {
+  .button_position_midle {
     margin-top: 41px;
   }
 }
 
 @media screen and (max-width: 499px) {
-  .button_write-down {
+  .button_position_midle {
     margin-top: 0;
   }
 }

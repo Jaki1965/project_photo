@@ -1,0 +1,25 @@
+/* стили заголовка */
+.orders__title {
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 106px;
+  line-height: 64px;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 999px) {
+  .orders__title {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .orders__title {
+    margin-top: 30px;
+    line-height: 38px;
+    font-size: 32px;
+
+  }
+}

@@ -1,0 +1,11 @@
+/* стили картинки - открывается с 768 */
+.orders__image_show {
+  display: none;
+}
+
+
+@media screen and (max-width: 999px) {
+  .orders__image_show {
+    display: block;
+  }
+}

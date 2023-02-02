@@ -28,6 +28,8 @@
 
 * Сверстан и проверен на всех трех разрешениях блок - Изучите композицию
 
+* Сверстан и проверен на всех трех разрешениях блок - Заказы. Остался footer
+
 
 Ссылка на макет Figma [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?t=FgWAfQ4qPhrS7ybL-6)
 

@@ -2,6 +2,7 @@
 
 .course {
   /* border: 1px solid red; */
+  background: #F4F4F4;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(2, auto);
