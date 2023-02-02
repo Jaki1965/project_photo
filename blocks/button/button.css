@@ -1,28 +1,24 @@
-.course__button {
+/* стили кнопки */
+.button {
   background: #fff;
   border: 2px solid #000;
   border-radius: 9999px;
   line-height: 29px;
   font-size: 18px;
   font-weight: 400;
-  justify-self: start;
-  align-self: end;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
   width: 228px;
   height: 49px;
   cursor: pointer;
   transition: 0.1s;
- 
 }
 
-.course__button:hover {
+.button:hover {
   font-weight: 500;
 }
 
 
 @media screen and (max-width: 499px) {
-  .course__button {
+  .button {
     line-height: 28px;
     font-size: 14px;
     width: 169px;

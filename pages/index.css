@@ -34,6 +34,7 @@
 @import url(../blocks/course/__title/course__title.css);
 @import url(../blocks/course/__image/course__image.css);
 @import url(../blocks/course/__subtitle/course__subtitle.css);
+@import url(../blocks/button/button.css);
 @import url(../blocks/course/__button/course__button.css);
 
 
@@ -41,6 +42,19 @@
 
 /* Второй блок Изучите композицию */
 @import url(../blocks/composition/composition.css);
+@import url(../blocks/composition/__intro-line/composition__intro-line.css);
+@import url(../blocks/composition/__text/composition__text.css);
+@import url(../blocks/composition/__title/composition__title.css);
+@import url(../blocks/composition/__info/composition__info.css);
+@import url(../blocks/composition/__info-text/composition__info-text.css);
+@import url(../blocks/composition/__info-text-bold/composition__info-text-bold.css);
+@import url(../blocks/composition/__image/composition__image.css);
+@import url(../blocks/composition/_hidden/composition__image_hidden.css);
+@import url(../blocks/composition/_show/composition__image_show.css);
+@import url(../blocks/button/_write-down/button_write-down.css);
+@import url(../blocks/composition/__footer/composition__footer.css);
+@import url(../blocks/composition/__footer-text/composition__footer-text.css);
+@import url(../blocks/composition/__footer-line/composition__footer-line.css);
 
 
 

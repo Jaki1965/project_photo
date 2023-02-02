@@ -1,0 +1,10 @@
+/* модификатор - скрывате картинку на разрешениях 768 и 320 */
+.composition__image_hidden {
+  display: block;
+}
+
+@media screen and (max-width: 999px) {
+  .composition__image_hidden {
+    display: none;
+  }
+}

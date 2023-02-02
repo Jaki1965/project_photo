@@ -1,0 +1,14 @@
+/* стили линии сверху - открыватся толко на 320 */
+.composition__intro-line {
+  display: none;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 499px) {
+  .composition__intro-line {
+    display: block;
+  }
+}

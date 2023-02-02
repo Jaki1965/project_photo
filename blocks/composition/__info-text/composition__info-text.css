@@ -1,0 +1,19 @@
+/* стили текста в блоке info */
+.composition__info-text {
+  /* border: 1px solid red; */
+  margin: 0;
+  margin-left: 4px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+ 
+}
+
+@media screen and (max-width: 499px) {
+  .composition__info-text {
+    margin-top: 6px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-left: 2px;
+  }
+}
