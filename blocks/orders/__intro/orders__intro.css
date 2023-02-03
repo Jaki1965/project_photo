@@ -1,0 +1,7 @@
+/* стили блока intro */
+.orders__intro {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, min-content);
+}

@@ -1,0 +1,10 @@
+/* модификатор открывающий картинку для разрешений 768 и 320 */
+.composition__image_show {
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .composition__image_show {
+    display: block;
+  }
+}

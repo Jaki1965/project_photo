@@ -1,0 +1,24 @@
+/* стили окна ввода в форме */
+.footer__form-input {
+  box-sizing: border-box; /* считается хорошей практикой */
+  display: block;
+  border: 2px solid #000;
+  color: #000;
+  width: 348px;
+  height: 50px;
+  padding-left: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 0.38px;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 499px) {
+  .footer__form-input {
+    font-size: 11px;
+    width: 175px;
+  }
+}

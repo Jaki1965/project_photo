@@ -9,6 +9,16 @@
 
 /* Шапка включающая меню */
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/__arrow/header__arrow.css);
+@import url(../blocks/header/__lines/header__lines.css);
+@import url(../blocks/menu/__basic/header__basic.css);
+@import url(../blocks/header/__midle/header__midle.css);
+@import url(../blocks/header/__signs/header__signs.css);
+@import url(../blocks/header/_midle/header__arrow_midle.css);
+@import url(../blocks/header/__cross/header__cross.css);
+@import url(../blocks/menu/__list/menu__list.css);
+@import url(../blocks/menu/_close/menu_close.css);
+@import url(../blocks/menu/__list-item/menu__list-item.css);
 
 
 
@@ -24,6 +34,7 @@
 @import url(../blocks/course/__title/course__title.css);
 @import url(../blocks/course/__image/course__image.css);
 @import url(../blocks/course/__subtitle/course__subtitle.css);
+@import url(../blocks/button/button.css);
 @import url(../blocks/course/__button/course__button.css);
 
 
@@ -31,6 +42,19 @@
 
 /* Второй блок Изучите композицию */
 @import url(../blocks/composition/composition.css);
+@import url(../blocks/composition/__intro-line/composition__intro-line.css);
+@import url(../blocks/composition/__text/composition__text.css);
+@import url(../blocks/composition/__title/composition__title.css);
+@import url(../blocks/composition/__info/composition__info.css);
+@import url(../blocks/composition/__info-text/composition__info-text.css);
+@import url(../blocks/composition/__info-text-bold/composition__info-text-bold.css);
+@import url(../blocks/composition/__image/composition__image.css);
+@import url(../blocks/composition/_hidden/composition__image_hidden.css);
+@import url(../blocks/composition/_show/composition__image_show.css);
+@import url(../blocks/button/_position/button_position_midle.css);
+@import url(../blocks/composition/__footer/composition__footer.css);
+@import url(../blocks/composition/__footer-text/composition__footer-text.css);
+@import url(../blocks/composition/__footer-line/composition__footer-line.css);
 
 
 
@@ -60,6 +84,16 @@
 
 /* Четвертый блок Научим находить заказы */
 @import url(../blocks/orders/orders.css);
+@import url(../blocks/orders/__intro/orders__intro.css);
+@import url(../blocks/orders/__intro-line/orders__intro-line.css);
+@import url(../blocks/orders/__text/orders__text.css);
+@import url(../blocks/orders/__title/orders__title.css);
+@import url(../blocks/orders/__image/orders__image.css);
+@import url(../blocks/orders/_hidden/orders__image_hidden.css);
+@import url(../blocks/orders/_show/orders__image_show.css);
+@import url(../blocks/orders/__info/orders__info.css);
+@import url(../blocks/orders/__info-text/orders__info-text.css);
+@import url(../blocks/button/_position/button_position_bottom.css);
 
 
 
@@ -67,3 +101,17 @@
 
 /* Блок footer */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__arrow/footer__arrow.css);
+@import url(../blocks/footer/__line/footer__line.css);
+@import url(../blocks/footer/__title/footer__title.css);
+@import url(../blocks/footer/__title-text/footer__title-text.css);
+@import url(../blocks/footer/__form/footer__form.css);
+@import url(../blocks/footer/__form-input/footer__form-input.css);
+@import url(../blocks/footer/__form-button/footer__form-button.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+
+
+
+
+

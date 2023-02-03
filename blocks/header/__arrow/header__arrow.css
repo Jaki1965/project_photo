@@ -1,0 +1,27 @@
+/* стили стрелки в верхнем меню */
+.header__arrow {
+  transition: 0.8s;
+}
+
+.header__arrow:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 999px) {
+  .header__arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header__arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+

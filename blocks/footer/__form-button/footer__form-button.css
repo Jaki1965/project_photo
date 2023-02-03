@@ -1,0 +1,29 @@
+/* стили кнопки submit в фоме */
+.footer__form-button {
+  display: block;
+  background: #fff;
+  margin: 0;
+  border: 2px solid #000;
+  border-left: 0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 50px;
+  width: 205px;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 0.38px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__form-button:hover {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 499px) {
+  .footer__form-button {
+    font-size: 11px;
+    width: 107px;
+  }
+}

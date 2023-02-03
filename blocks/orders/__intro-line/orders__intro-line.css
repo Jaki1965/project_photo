@@ -1,0 +1,15 @@
+/* стили линиии сверху - открывается только на 320 */
+.orders__intro-line {
+  display: none;
+  margin: 0;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 499px) {
+  .orders__intro-line {
+    display: block;
+    max-width: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,6 @@
+/* стили крестика на выпадающем меню  */
+.header__cross {
+  grid-column: 2/3;
+  justify-self: end;
+  
+}

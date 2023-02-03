@@ -1,0 +1,4 @@
+/* стиль слова выделенного жирным */
+.composition__info-text-bold {
+  font-weight: 700;
+}

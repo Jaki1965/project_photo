@@ -15,6 +15,32 @@
 
     <!-- Шапка включающая меню -->
     <header class="header">
+      <!-- сновное меню -->
+      <div class="header__basic">
+        <img class="header__arrow" src="./images/Vector_header.svg" alt="Вращающаяся стрелка">
+        <img class="header__lines" src="./images/Group_line_menu.svg" alt="Кнопка перехода в меню">
+        <nav class="menu menu_close">
+          <ul class="menu__list ">
+            <li><a class="menu__list-item" href="#composition">Композиция</a></li>
+            <li><a class="menu__list-item" href="#actions">Камера</a></li>
+            <li><a class="menu__list-item" href="#orders">Поиск заказов</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- открывающееся меню -->
+      <div class="header__midle">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li><a class="menu__list-item" href="#composition">Композиция</a></li>
+            <li><a class="menu__list-item" href="#actions">Камера</a></li>
+            <li><a class="menu__list-item" href="#orders">Поиск заказов</a></li>
+          </ul>
+        </nav>
+        <div class="header__signs">
+          <img class="header__arrow header__arrow_midle" src="./images/Vector_header.svg" alt="Вращающаяся стрелка">
+          <img class="header__cross" src="./images/Group 10_cross.svg" alt="Кнопка закрытие меню">
+        </div>
+      </div>
       
     </header>
 
@@ -26,16 +52,37 @@
         <h1 class="course__title">Курс по фотографии</h1>
         <img class="course__image"   src="./images/Лес _1_пр.png" alt="Лес">
         <p class="course__subtitle">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
-        <button class="course__button" type="button" aria-label="Открывает котнтен Подробнее">Подробнее</button>
+        <button class="button" type="button" aria-label="Открывает котнтен Подробнее">Подробнее</button>
       </section>
 
       <!-- Второй блок Изучите композицию -->
-      <section class="composition">
+      <section class="composition" id="composition">
+        <div class="composition__intro">
+          <p class="composition__intro-line"></p>
+          <p class="composition__text">Композиция</p>
+          <h2 class="composition__title">Изучите композицию</h2>
+        </div>
+       <img class="composition__image composition__image_hidden" src="./images/Лес и дорога_2_1.jpg" alt="Дорога в густом лесу">
+       <img class="composition__image composition__image_show" src="./images/Лес и дорога_2.jpg" alt="Дорога в густом лесу">
+        <div class="composition__info">
+          <p class="composition__info-text">Вы изучите гармоничное размещение всех элементов изображения на <span class="composition__info-text-bold">снимке</span>.</p>
+          <p class="composition__info-text">Изучите композицию интуитивную и&nbsp;какие-&nbsp;то определённые законы.</p>
+          <button class="button button_position_midle" type="button" aria-label="Открывает котнтен Записаться">Записаться</button>
+        </div>
 
+        <div class="composition__footer">
+          <p class="composition__footer-text">Првило третей, при котором нужно распологать объекты на пересечениях.</p>
+          <p class="composition__footer-line"></p>
+          <p class="composition__footer-text">Простота: убирай всё лишнее и&nbsp;кадрируй!</p>
+          <p class="composition__footer-line"></p>
+          <p class="composition__footer-text">Равновесие: уравновесь пятна объекта и фона.</p>
+          <p class="composition__footer-line"></p>
+          <p class="composition__footer-text">3D глубина кадра: расположи объект позади и перед другими предметами.</p>
+        </div>
       </section>
 
       <!-- Третий блок Настройка, Сьемка, Обработка -->
-      <section class="actions">
+      <section class="actions" id="actions">
         <div class="actions__title">
           <p class="actions__title-line"></p>
           <p class="actions__camera">камера</p>
@@ -63,10 +110,21 @@
         </div>
       </section>
 
-  
-
       <!-- Четвертый блок Научим находить заказы -->
-      <section class="orders">
+      <section class="orders" id="orders">
+        <div class="orders__intro">
+          <p class="orders__intro-line"></p>
+          <p class="orders__text">поиск заказов</p>
+          <h2 class="orders__title">Научим находить заказы! </h2>
+        </div>
+        <img class="orders__image orders__image_hidden"  src="./images/Кроны деревьев_4_1.jpg" alt="Кроны деревьев">
+        <img class="orders__image orders__image_show"  src="./images/Кроны деревьев_4_2.jpg" alt="Кроны деревьев">
+        <div class="orders__info">
+          <p class="orders__info-text">Мы научим вас искать заказы на всяких фриланс биржах, 
+            а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.
+          </p>
+          <button class="button button_position_bottom" type="button" aria-label="Открывает котнтен Записаться">Записаться</button>
+        </div>
 
       </section>
 
@@ -74,8 +132,20 @@
 
     <!-- Footer -->
     <footer class="footer">
-
+      <img class="footer__arrow" src="./images/Vector_big.svg" alt="Срелка указывающая на предложение - Зписаться сейчас">
+      <p class="footer__line"></p>
+      <div class="footer__title">
+        <h2 class="footer__title-text">Записаться!</h2>
+        <h2 class="footer__title-text">Сейчас!</h2>
+      </div>
+      <form class="footer__form" action="">
+        <input class="footer__form-input" type="email" name="user-email" onfocus="this.value=''" value="Ваша почта">
+        <input class="footer__form-button" type="submit" value="Записаться!">
+      </form>
+      <div class="footer__copyright">2021 Photo-lessons.</div>
     </footer>
+
+    <script src="js/script.js">  </script>
 
   </body>
 </html>
