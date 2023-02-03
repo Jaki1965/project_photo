@@ -1,3 +1,29 @@
 /* Самые общие стили footer */
+.footer {
+  background: #DF2626;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr min-content min(124px);
+}
 
+@media screen and (max-width: 999px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto min-content min(104px);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+}
 
+@media screen and (max-width: 999px) {
+  .footer {
+    grid-template-rows: repeat(3, min-content) min(64px);
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+}

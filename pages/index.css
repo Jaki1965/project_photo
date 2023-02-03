@@ -101,3 +101,17 @@
 
 /* Блок footer */
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__arrow/footer__arrow.css);
+@import url(../blocks/footer/__line/footer__line.css);
+@import url(../blocks/footer/__title/footer__title.css);
+@import url(../blocks/footer/__title-text/footer__title-text.css);
+@import url(../blocks/footer/__form/footer__form.css);
+@import url(../blocks/footer/__form-input/footer__form-input.css);
+@import url(../blocks/footer/__form-button/footer__form-button.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+
+
+
+
+
