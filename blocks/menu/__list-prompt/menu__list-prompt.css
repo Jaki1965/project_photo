@@ -1,0 +1,22 @@
+/* стили всплывающей подсказки */
+.menu__list-prompt {
+  /* display: none; */
+  background: #DF2626;;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .5s, opacity .5s linear;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  
+}
+

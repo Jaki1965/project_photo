@@ -6,4 +6,14 @@
   font-family: 'Inter';
   font-size: 16px;
   font-weight: 400;
+  position: relative;
+  
+}
+
+
+.menu__list-item:hover .menu__list-prompt{
+  /* display: inline; */
+  visibility: visible;
+  opacity: 1;
+  
 }

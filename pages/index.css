@@ -19,6 +19,11 @@
 @import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/_close/menu_close.css);
 @import url(../blocks/menu/__list-item/menu__list-item.css);
+@import url(../blocks/header/__midle/_off/header__midle_off.css);
+@import url(../blocks/header/__basic/_off/header__basic_off.css);
+
+@import url(../blocks/menu/__list-prompt/menu__list-prompt.css);
+@import url(../blocks/menu/__list-prompt-photo/menu__list-prompt-photo.css);
 
 
 
@@ -35,7 +40,6 @@
 @import url(../blocks/course/__image/course__image.css);
 @import url(../blocks/course/__subtitle/course__subtitle.css);
 @import url(../blocks/button/button.css);
-@import url(../blocks/course/__button/course__button.css);
 
 
 

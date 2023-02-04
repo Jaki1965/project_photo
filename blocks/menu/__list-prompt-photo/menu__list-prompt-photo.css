@@ -1,0 +1,6 @@
+/* стили фотографии в подсказке */
+.menu__list-prompt-photo {
+  max-width: 50px;
+  margin-right: 5px;
+  object-fit: contain;
+}
