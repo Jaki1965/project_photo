@@ -1,0 +1,28 @@
+/* стили сообщения - камера */
+.actions__camera {
+  /* border: 1px solid orange; */
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+@media screen and (max-width: 999px) {
+  .actions__camera {
+    margin-bottom: 40px;
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .actions__camera {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}

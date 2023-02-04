@@ -1,0 +1,27 @@
+/*  */
+.orders__info {
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: 1fr min(380px);
+  grid-template-rows: repeat(2, 2fr);
+  grid-row: 2/3;
+}
+
+@media screen and (max-width: 999px) {
+  .orders__info {
+    margin-top: 60px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-template-columns: min(380px) 1fr;
+    grid-template-rows: repeat(2, 2fr);
+  
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .orders__info {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content  min-content;
+    row-gap: 30px;
+  }
+}

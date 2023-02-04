@@ -1,0 +1,24 @@
+/* стили текста в подвале блока */
+.composition__footer-text {
+  /* border: 1px solid blue; */
+  margin: 0;
+  max-width: 291px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 999px) {
+  .composition__footer-text {
+    max-width: 690px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .composition__footer-text {
+    /* max-width: 290px; */
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
+

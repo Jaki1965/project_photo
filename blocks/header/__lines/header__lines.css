@@ -1,0 +1,10 @@
+/* стили меню из трех линий */
+.header__lines {
+  display: none;
+} 
+
+@media screen and (max-width: 999px) {
+  .header__lines {
+    display: block;
+  }
+}

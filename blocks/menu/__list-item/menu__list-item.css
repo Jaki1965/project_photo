@@ -1,0 +1,19 @@
+/* стили ссылок в верхнем меню */
+.menu__list-item {
+  text-decoration: none;
+  color: #fff;
+  line-height: 24px;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  
+}
+
+
+.menu__list-item:hover .menu__list-prompt{
+  /* display: inline; */
+  visibility: visible;
+  opacity: 1;
+  
+}

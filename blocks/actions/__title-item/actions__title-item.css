@@ -1,0 +1,16 @@
+/* стили элемнтов заголовка уровня h2*/
+.actions__title-item {
+  /* border: 1px solid rgb(0, 94, 255); */
+  margin: 0;
+  line-height: 122.4px;
+  font-size: 122px;
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 499px) {
+  .actions__title-item {
+    line-height: 56.25px;
+    font-size: 48px;
+  }
+}

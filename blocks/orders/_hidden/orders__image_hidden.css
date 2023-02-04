@@ -1,0 +1,10 @@
+/* модификатор изображения - скрывает его после 768 */
+.orders__image_hidden {
+  display: block;
+}
+
+@media screen and (max-width: 999px) {
+  .orders__image_hidden {
+   display: none;
+  }
+}

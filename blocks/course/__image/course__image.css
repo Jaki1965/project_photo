@@ -1,0 +1,24 @@
+.course__image {
+  max-width: 642px;
+  justify-self: right;
+  grid-row: 1/4;
+  grid-column: 2/3;
+}
+
+@media screen and (max-width: 999px) {
+  .course__image {
+    max-width: 688px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .course__image {
+    max-width: 280px;
+    margin-top: 30px;
+
+  }
+}

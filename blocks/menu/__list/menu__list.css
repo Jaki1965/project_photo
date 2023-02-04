@@ -1,0 +1,23 @@
+/* общие стили меню */
+.menu__list {
+  /* border: 1px solid green; */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: auto;
+  column-gap: 40px;
+ 
+
+}
+
+@media screen and (max-width: 499px) {
+  .menu__list {
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(3, fit-content);
+    row-gap: 12px;
+    justify-items: center;
+  
+  }
+}
