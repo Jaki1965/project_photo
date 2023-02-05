@@ -1,0 +1,6 @@
+/* стили фотографий в слайдере */
+.course__slider-photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

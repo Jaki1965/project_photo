@@ -1,0 +1,6 @@
+/* стили контейнера под кнопки слайдера "вперед" и "назад" */
+.course__slider-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

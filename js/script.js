@@ -4,19 +4,58 @@ const buttonCross = document.querySelector('.header__cross'); /* в переме
 const menuMidleOff = document.querySelector('.header__midle_off'); /* в переменную menuOff забираем селектор модификатора - доп. менб отключено */
 const menuBasicOff = document.querySelector('.header__basic'); /* забираем в переменную селектор главного меню */
 
+const sliderCourse = document.querySelector('.course__slider'); /* забираем селектор контейнера с фотографиями */
+const sliderCourseItems = Array.from(sliderCourse.children) /* забираем все дочерние элементы слайдера, т.е. все картинки, какие есть и формируем массив */
+const sliderCourseButtonNext = document.querySelector('.course__slider-button_next'); /* забираем селектор кнопки "вперед " */
+const sliderCourseButtonPrev = document.querySelector('.course__slider-button_prev'); /* забираем селектор кнопки назад" */
+
+
+console.log(sliderCourseItems);
+console.log(sliderCourseItems.length);
+console.log(sliderCourseButtonNext);
+console.log(sliderCourseButtonPrev);
+
+sliderCourseItems.forEach((slide, index) => {
+   if (index !== 0){
+    slide.classList.add('course__slider-photo_off'); // обходим весь массив и всем слайдам кроме первого (index == 0) навешиваем закрывающий модификатор 
+    
+   }
+});
+
+    let index = 0;
+    sliderCourseButtonNext.addEventListener('click', (evt) => {
+      sliderCourseItems[index].classList.add('course__slider-photo_off');
+      index +=1;
+      if (index == sliderCourseItems.length) {
+        index = 0;
+      }
+      sliderCourseItems[index].classList.remove('course__slider-photo_off');
+    });
+
+    sliderCourseButtonPrev.addEventListener('click', (evt) => {
+      sliderCourseItems[index].classList.add('course__slider-photo_off');
+      if (index == 0) {
+        index = sliderCourseItems.length;
+      }
+      index -=1;
+      sliderCourseItems[index].classList.remove('course__slider-photo_off');
+    });
+
+
+
 /* функция открытия дополнителього меню при нажатии на кнопку из трех линий */
 buttonLine.addEventListener('click', function(evt) {
     menuMidleOff.classList.remove('header__midle_off');
     menuBasicOff.classList.add('header__basic_off');
 });
 
+/* функция закрытия доп меню при нажатии на кнопку крестик */
 buttonCross.addEventListener('click', function(evt) {
     menuMidleOff.classList.add('header__midle_off')
     menuBasicOff.classList.remove('header__basic_off');
 });
 
-
-
+/* плавный скрол к пункту который кликнули в меню */
 
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (evt) {

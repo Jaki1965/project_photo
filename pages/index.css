@@ -41,6 +41,12 @@
 @import url(../blocks/course/__subtitle/course__subtitle.css);
 @import url(../blocks/button/button.css);
 
+@import url(../blocks/course/__slider/course__slider.css);
+@import url(../blocks/course/__slider-photo/course__slider-photo.css);
+@import url(../blocks/course/__slider-control/course__slider-control.css);
+@import url(../blocks/course/__slider-button/course__slider-button.css);
+@import url(../blocks/course/__slider-photo/_off/course__slider-photo_off.css);
+
 
 
 

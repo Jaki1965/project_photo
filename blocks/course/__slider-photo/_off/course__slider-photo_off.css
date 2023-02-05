@@ -1,0 +1,4 @@
+/* модификатор отключающий изобюражение слайда */
+.course__slider-photo_off {
+  display: none;
+}

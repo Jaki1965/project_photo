@@ -1,0 +1,11 @@
+/* основные стили слайдера в блоке course */
+.course__slider {
+  border: 2px solid blue;
+  margin-top: 40px;
+  min-height: 500px;
+  
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; */
+}
