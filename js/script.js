@@ -19,11 +19,12 @@ console.log(buttonCourse);
 // Создаем функцию, которая будет плано открывать картинку. У функции два параметра element - блок который открываем, speed - скорость с котрой открываем
 
 function showImage(element, speed) {
-  const timeChange = setInterval(() => {         // setInterval устанавливает с какой периодичностью нужно исполнять программу // в целом написание такое setInterval(() => { здесь, что сделать}, время интервала в милисикундах)
-    let imageOpasity = +element.style.opacity;   // создаем переменную в котрую заберем текущее значение opasity 
+  const timeChange = setInterval(() => {  
+    element.classList.remove('course__slider-photo_off'); 
+    let imageOpasity = +element.style.opacity;           // создаем переменную в котрую заберем текущее значение opasity 
     if (imageOpasity >= 1) {                     // если opasity больше или рано 1, то очищаем таймер
       clearInterval(timeChange);
-      //element.classList.add('course__slider-photo_off');   // после чего удаляем блок - здесь это не нужно оставил для памяти              
+                                                   // после чего удаляем блок - здесь это не нужно оставил для памяти              
     }
     imageOpasity += 0.01;                       // если еще не дошли до единицы, то на каждом повторении увеличиваем opasity на 0,01
     element.style.opacity = imageOpasity;
@@ -37,12 +38,41 @@ function hiddenImage(element, speed) {
     let imageOpasity = +element.style.opacity;   
     if (imageOpasity <= 0) {                     
       clearInterval(timeChange);
-      // element.classList.add('course__slider-photo_off');    // как только станет невидимым - блок display: none;        
+      element.classList.add('course__slider-photo_off');    // как только станет невидимым - блок display: none;        
     }
     imageOpasity -= 0.01;                       
     element.style.opacity = imageOpasity;
   }, speed)                                     
 };
+
+
+
+function showImageCourse(element, speed) {
+  const timeChange = setInterval(() => {        
+    let imageOpasity = +element.style.opacity;   
+    if (imageOpasity >= 1) {                     
+      clearInterval(timeChange);             
+    }
+    imageOpasity += 0.01;                       
+    element.style.opacity = imageOpasity;
+  }, speed);                                   
+};
+
+
+
+
+function hiddenImageCourse(element, speed) {
+  const timeChange = setInterval(() => {         
+    let imageOpasity = +element.style.opacity;   
+    if (imageOpasity <= 0) {                     
+      clearInterval(timeChange);       
+    }
+    imageOpasity -= 0.01;                       
+    element.style.opacity = imageOpasity;
+  }, speed)                                     
+};
+
+
 
 /* этот скрипт реализует плавное исчезновение при первом клике кнопки и плавное появление при повторном клике */
 let counter = 0;
@@ -50,10 +80,10 @@ buttonCourse.addEventListener('click', function(event) {
   counter ++;
   if (counter % 2 !== 0) {
     pictureCourse.style.opacity = 1;
-    hiddenImage(pictureCourse, 3);
+    hiddenImageCourse(pictureCourse, 3);
   } 
   if (counter % 2 == 0) {
-    showImage(pictureCourse, 3);
+    showImageCourse(pictureCourse, 3);
   }
   
 });
@@ -71,21 +101,26 @@ sliderCourseItems.forEach((slide, index) => {
 
     let index = 0;
     sliderCourseButtonNext.addEventListener('click', (evt) => {
-      sliderCourseItems[index].classList.add('course__slider-photo_off');
+      // sliderCourseItems[index].style.opacity = 1;
+      hiddenImage(sliderCourseItems[index], 3);
+      // sliderCourseItems[index].classList.add('course__slider-photo_off');
       index +=1;
       if (index == sliderCourseItems.length) {
         index = 0;
       }
-      sliderCourseItems[index].classList.remove('course__slider-photo_off');
+      showImage(sliderCourseItems[index], 3);
+      // sliderCourseItems[index].classList.remove('course__slider-photo_off');
     });
 
     sliderCourseButtonPrev.addEventListener('click', (evt) => {
-      sliderCourseItems[index].classList.add('course__slider-photo_off');
+      hiddenImage(sliderCourseItems[index], 3);
+      // sliderCourseItems[index].classList.add('course__slider-photo_off');
       if (index == 0) {
         index = sliderCourseItems.length;
       }
       index -=1;
-      sliderCourseItems[index].classList.remove('course__slider-photo_off');
+      showImage(sliderCourseItems[index], 3);
+      // sliderCourseItems[index].classList.remove('course__slider-photo_off');
     });
 
 
