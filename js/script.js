@@ -52,18 +52,25 @@ function hiddenImage(element, speed) {
     let imageOpasity = +element.style.opacity;   
     if (imageOpasity <= 0) {                     
       clearInterval(timeChange);
-      element.classList.add('course__slider-photo_off');    // как только станет невидимым - блок display: none;        
+      // element.classList.add('course__slider-photo_off');    // как только станет невидимым - блок display: none;        
     }
     imageOpasity -= 0.01;                       
     element.style.opacity = imageOpasity;
   }, speed)                                     
 };
 
-
-
+/* этот скрипт реализует плавное исчезновение при первом клике кнопки и плавное появление при повторном клике */
+  let counter = 0;
 buttonCourse.addEventListener('click', function(event) {
-  pictureCourse.style.opacity = 1;
-  hiddenImage(pictureCourse, 8);
+  counter ++;
+  console.log(counter);
+  if (counter % 2 !== 0) {
+    pictureCourse.style.opacity = 1;
+    hiddenImage(pictureCourse, 3);
+  } 
+  if (counter % 2 == 0) {
+    showImage(pictureCourse, 3);
+  }
   
 });
 

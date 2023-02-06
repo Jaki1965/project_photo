@@ -1,0 +1,8 @@
+/* контейнер для картинки - будет фью портом для слайдера */
+.course__image-container {
+  border: 2px solid green;
+  width: 645px;
+  height: 555px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
