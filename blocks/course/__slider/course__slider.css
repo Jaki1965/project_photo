@@ -1,6 +1,7 @@
 /* основные стили слайдера в блоке course */
 .course__slider {
   border: 2px solid blue;
+  background: #000;
   margin-top: 40px;
   min-height: 500px;
   grid-column: 1/2;

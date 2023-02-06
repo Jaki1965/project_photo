@@ -21,14 +21,13 @@ console.log(buttonCourse);
 function showImage(element, speed) {
   const timeChange = setInterval(() => {  
     element.classList.remove('course__slider-photo_off'); 
-    let imageOpasity = +element.style.opacity;           // создаем переменную в котрую заберем текущее значение opasity 
-    if (imageOpasity >= 1) {                     // если opasity больше или рано 1, то очищаем таймер
-      clearInterval(timeChange);
-                                                   // после чего удаляем блок - здесь это не нужно оставил для памяти              
+    let imageOpasity = +element.style.opacity;          
+    if (imageOpasity >= 1) {                     
+      clearInterval(timeChange);                                                   
     }
-    imageOpasity += 0.01;                       // если еще не дошли до единицы, то на каждом повторении увеличиваем opasity на 0,01
+    imageOpasity += 0.01;                       
     element.style.opacity = imageOpasity;
-  }, speed)                                     // повторяем итерацию через каждые speed - милисикунд
+  }, speed)                                     
 };
 
 // Создаем функцию, котрая будет плавно скрывать картинку. У функции два параметра element - блок который скрываем, speed - скорость с котрой скрываем
@@ -102,24 +101,24 @@ sliderCourseItems.forEach((slide, index) => {
     let index = 0;
     sliderCourseButtonNext.addEventListener('click', (evt) => {
       // sliderCourseItems[index].style.opacity = 1;
-      hiddenImage(sliderCourseItems[index], 3);
+      hiddenImage(sliderCourseItems[index], 4);
       // sliderCourseItems[index].classList.add('course__slider-photo_off');
       index +=1;
       if (index == sliderCourseItems.length) {
         index = 0;
       }
-      showImage(sliderCourseItems[index], 3);
+      showImage(sliderCourseItems[index], 4);
       // sliderCourseItems[index].classList.remove('course__slider-photo_off');
     });
 
     sliderCourseButtonPrev.addEventListener('click', (evt) => {
-      hiddenImage(sliderCourseItems[index], 3);
+      hiddenImage(sliderCourseItems[index], 4);
       // sliderCourseItems[index].classList.add('course__slider-photo_off');
       if (index == 0) {
         index = sliderCourseItems.length;
       }
       index -=1;
-      showImage(sliderCourseItems[index], 3);
+      showImage(sliderCourseItems[index], 4);
       // sliderCourseItems[index].classList.remove('course__slider-photo_off');
     });
 
