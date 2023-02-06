@@ -11,25 +11,10 @@ const sliderCourseButtonPrev = document.querySelector('.course__slider-button_pr
 
 const pictureCourse = document.querySelector('.course__image'); /* забираем селектор картинки */
 const buttonCourse = document.querySelector('.course > button'); /* забиарем селектор большой кнопки в разделе КУРСЫ */
-// let imageOpacity = pictureCourse.style.opacity; 
 
 
 console.log(buttonCourse);
 
-// console.log(pictureCourse);
-// console.log(pictureCourseOpacity);
-
-// function fadeIn(element, speed) {
-  
-//   const step = 1 / speed;
-//     const interval = setTimeout(function() {
-//       if (+element.style.opacity >= 1)
-//       clearTimeout(interval);
-//     element.style.opacity = +pictureCourse.style.opacity + step;
-//   }, speed / 1000);
-   
-    
-// };
 
 // Создаем функцию, которая будет плано открывать картинку. У функции два параметра element - блок который открываем, speed - скорость с котрой открываем
 
@@ -60,10 +45,9 @@ function hiddenImage(element, speed) {
 };
 
 /* этот скрипт реализует плавное исчезновение при первом клике кнопки и плавное появление при повторном клике */
-  let counter = 0;
+let counter = 0;
 buttonCourse.addEventListener('click', function(event) {
   counter ++;
-  console.log(counter);
   if (counter % 2 !== 0) {
     pictureCourse.style.opacity = 1;
     hiddenImage(pictureCourse, 3);

@@ -1,9 +1,15 @@
 .course__image {
-  max-width: 642px;
+  width: 100%;
+  height: 100%;
   justify-self: right;
   grid-row: 1/4;
   grid-column: 2/3;
+  object-fit: cover;
   opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 @media screen and (max-width: 999px) {
