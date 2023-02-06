@@ -9,11 +9,67 @@ const sliderCourseItems = Array.from(sliderCourse.children) /* забираем 
 const sliderCourseButtonNext = document.querySelector('.course__slider-button_next'); /* забираем селектор кнопки "вперед " */
 const sliderCourseButtonPrev = document.querySelector('.course__slider-button_prev'); /* забираем селектор кнопки назад" */
 
+const pictureCourse = document.querySelector('.course__image'); /* забираем селектор картинки */
+const buttonCourse = document.querySelector('.course > button'); /* забиарем селектор большой кнопки в разделе КУРСЫ */
+// let imageOpacity = pictureCourse.style.opacity; 
 
-console.log(sliderCourseItems);
-console.log(sliderCourseItems.length);
-console.log(sliderCourseButtonNext);
-console.log(sliderCourseButtonPrev);
+
+console.log(buttonCourse);
+
+// console.log(pictureCourse);
+// console.log(pictureCourseOpacity);
+
+// function fadeIn(element, speed) {
+  
+//   const step = 1 / speed;
+//     const interval = setTimeout(function() {
+//       if (+element.style.opacity >= 1)
+//       clearTimeout(interval);
+//     element.style.opacity = +pictureCourse.style.opacity + step;
+//   }, speed / 1000);
+   
+    
+// };
+
+// Создаем функцию, которая будет плано открывать картинку. У функции два параметра element - блок который открываем, speed - скорость с котрой открываем
+
+function showImage(element, speed) {
+  const timeChange = setInterval(() => {         // setInterval устанавливает с какой периодичностью нужно исполнять программу // в целом написание такое setInterval(() => { здесь, что сделать}, время интервала в милисикундах)
+    let imageOpasity = +element.style.opacity;   // создаем переменную в котрую заберем текущее значение opasity 
+    if (imageOpasity >= 1) {                     // если opasity больше или рано 1, то очищаем таймер
+      clearInterval(timeChange);
+      //element.classList.add('course__slider-photo_off');   // после чего удаляем блок - здесь это не нужно оставил для памяти              
+    }
+    imageOpasity += 0.01;                       // если еще не дошли до единицы, то на каждом повторении увеличиваем opasity на 0,01
+    element.style.opacity = imageOpasity;
+  }, speed)                                     // повторяем итерацию через каждые speed - милисикунд
+};
+
+// Создаем функцию, котрая будет плавно скрывать картинку. У функции два параметра element - блок который скрываем, speed - скорость с котрой скрываем
+
+function hiddenImage(element, speed) {
+  const timeChange = setInterval(() => {         
+    let imageOpasity = +element.style.opacity;   
+    if (imageOpasity <= 0) {                     
+      clearInterval(timeChange);
+      element.classList.add('course__slider-photo_off');    // как только станет невидимым - блок display: none;        
+    }
+    imageOpasity -= 0.01;                       
+    element.style.opacity = imageOpasity;
+  }, speed)                                     
+};
+
+
+
+buttonCourse.addEventListener('click', function(event) {
+  pictureCourse.style.opacity = 1;
+  hiddenImage(pictureCourse, 8);
+  
+});
+
+
+
+
 
 sliderCourseItems.forEach((slide, index) => {
    if (index !== 0){

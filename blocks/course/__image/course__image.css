@@ -3,6 +3,7 @@
   justify-self: right;
   grid-row: 1/4;
   grid-column: 2/3;
+  opacity: 1;
 }
 
 @media screen and (max-width: 999px) {
