@@ -1,0 +1,15 @@
+/* сложный модификатор для отключения изображение в верхнем слайдере */
+.course__image_visible_none {
+  /* display: none; */
+  display: block;
+  animation: hiddenBlock 0.6s linear forwards;
+}
+
+@keyframes hiddenBlock {
+  0% {
+    opacity: 1;;
+  }
+  100% {
+    opacity: 0;
+  }
+}

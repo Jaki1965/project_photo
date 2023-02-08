@@ -1,0 +1,15 @@
+/* сложный модификатор обеспечивающий демонстрацию картинки */
+.course__image_visible_yes {
+  display: block;
+  animation: showBlock 0.6s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

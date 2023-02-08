@@ -11,9 +11,20 @@ const sliderCourseButtonPrev = document.querySelector('.course__slider-button_pr
 
 const pictureCourse = document.querySelector('.course__image'); /* забираем селектор картинки */
 const buttonCourse = document.querySelector('.course > button'); /* забиарем селектор большой кнопки в разделе КУРСЫ */
+const buttonCourseNext = document.querySelector('.coorse__image-button-next'); /* забираем селектор кнопки ВПЕРЕД в верхнем слайдере */
+const buttonCoursePrev = document.querySelector('.coorse__image-button-prev'); /* забираем селектор кнопки НАЗАД в верхнем слайдере */
+
+const imagesCourseContainer = document.querySelectorAll('.course__image-container > img'); /* забираем селекторы только картинок (в блоке есть еще и кнопки) */
+const imagesCourseItems = Array.from(imagesCourseContainer); /* формируем массив из элементов img? чтобы иметь возможность работать с индексами */
 
 
-console.log(buttonCourse);
+console.log(imagesCourseContainer);
+console.log(imagesCourseItems);
+
+
+// console.log(buttonCourseNext);
+// console.log(buttonCoursePrev);
+// console.log(buttonCourse);
 
 
 // Создаем функцию, которая будет плано открывать картинку. У функции два параметра element - блок который открываем, speed - скорость с котрой открываем
@@ -45,47 +56,119 @@ function hiddenImage(element, speed) {
 };
 
 
+let index_img = 0;
+imagesCourseItems.forEach((image, index_img) => {
+  if (index_img == 0){
+    imagesCourseItems[index_img].style.zIndex = 1;
+  }
+  
+});
 
-function showImageCourse(element, speed) {
-  const timeChange = setInterval(() => {        
-    let imageOpasity = +element.style.opacity;   
-    if (imageOpasity >= 1) {                     
-      clearInterval(timeChange);             
-    }
-    imageOpasity += 0.01;                       
-    element.style.opacity = imageOpasity;
-  }, speed);                                   
+function showImageCourse(element) {
+  element.classList.remove('course__image_visible_none');
+  element.classList.add('course__image_visible_yes');
+};
+
+function hiddenImageCourse(element) {
+  element.classList.remove('course__image_visible_yes');
+  element.classList.add('course__image_visible_none');
 };
 
 
+buttonCourseNext.addEventListener('click', (evt) => {
+  hiddenImageCourse(imagesCourseItems[index_img])
+  imagesCourseItems[index_img].style.zIndex = 1;
+  index_img += 1;
+  if (index_img == imagesCourseItems.length){
+    index_img = 0;
+  }
+  imagesCourseItems[index_img].style.zIndex = 2;
+  showImageCourse(imagesCourseItems[index_img]);
+});
+
+buttonCoursePrev.addEventListener('click', (evt) => {
+  hiddenImageCourse(imagesCourseItems[index_img])
+  imagesCourseItems[index_img].style.zIndex = 1;
+  if (index_img == 0) {
+    index_img = imagesCourseItems.length;
+  }
+  index_img -= 1;
+  imagesCourseItems[index_img].style.zIndex = 2;
+  showImageCourse(imagesCourseItems[index_img]);
+});
 
 
-function hiddenImageCourse(element, speed) {
-  const timeChange = setInterval(() => {         
-    let imageOpasity = +element.style.opacity;   
-    if (imageOpasity <= 0) {                     
-      clearInterval(timeChange);       
-    }
-    imageOpasity -= 0.01;                       
-    element.style.opacity = imageOpasity;
-  }, speed)                                     
-};
+// function showImageCourse(element, speed) {
+//   const timeChange = setInterval(() => {        
+//     let imageOpasity = +element.style.opacity;   
+//     if (imageOpasity >= 1) {                     
+//       clearInterval(timeChange);             
+//     }
+//     imageOpasity += 0.01;                       
+//     element.style.opacity = imageOpasity;
+//   }, speed);                                   
+// };
+
+
+
+
+// function hiddenImageCourse(element, speed) {
+//   const timeChange = setInterval(() => {         
+//     let imageOpasity = +element.style.opacity;   
+//     if (imageOpasity <= 0) {                     
+//       clearInterval(timeChange);       
+//     }
+//     imageOpasity -= 0.01;                       
+//     element.style.opacity = imageOpasity;
+//   }, speed)                                     
+// };
+
+
+// function showImageCourse(element) {
+//   element.classList.remove('course__image_visible_none');
+//   element.classList.add('course__image_visible_yes');
+// };
+
+// buttonCourseNext.addEventListener('click', (evt) => {
+//   showImageCourse(pictureCourse);
+// });
+
+
+// function hiddenImageCourse(element) {
+//   element.classList.remove('course__image_visible_yes');
+//   element.classList.add('course__image_visible_none');
+// };
+
+// buttonCoursePrev.addEventListener('click', (evt) => {
+//   hiddenImageCourse(pictureCourse);
+// });
+
+
+
+
+// buttonCourseNext.addEventListener('click', (evt) => {
+
+// });
+
+
+
+
 
 
 
 /* этот скрипт реализует плавное исчезновение при первом клике кнопки и плавное появление при повторном клике */
-let counter = 0;
-buttonCourse.addEventListener('click', function(event) {
-  counter ++;
-  if (counter % 2 !== 0) {
-    pictureCourse.style.opacity = 1;
-    hiddenImageCourse(pictureCourse, 3);
-  } 
-  if (counter % 2 == 0) {
-    showImageCourse(pictureCourse, 3);
-  }
+// let counter = 0;
+// buttonCourse.addEventListener('click', function(event) {
+//   counter ++;
+//   if (counter % 2 !== 0) {
+//     pictureCourse.style.opacity = 1;
+//     hiddenImageCourse(pictureCourse, 3);
+//   } 
+//   if (counter % 2 == 0) {
+//     showImageCourse(pictureCourse, 3);
+//   }
   
-});
+// });
 
 
 
@@ -100,26 +183,21 @@ sliderCourseItems.forEach((slide, index) => {
 
     let index = 0;
     sliderCourseButtonNext.addEventListener('click', (evt) => {
-      // sliderCourseItems[index].style.opacity = 1;
-      hiddenImage(sliderCourseItems[index], 4);
-      // sliderCourseItems[index].classList.add('course__slider-photo_off');
+      hiddenImage(sliderCourseItems[index], 2);
       index +=1;
       if (index == sliderCourseItems.length) {
         index = 0;
       }
-      showImage(sliderCourseItems[index], 4);
-      // sliderCourseItems[index].classList.remove('course__slider-photo_off');
+      showImage(sliderCourseItems[index], 2);
     });
 
     sliderCourseButtonPrev.addEventListener('click', (evt) => {
-      hiddenImage(sliderCourseItems[index], 4);
-      // sliderCourseItems[index].classList.add('course__slider-photo_off');
+      hiddenImage(sliderCourseItems[index], 2);
       if (index == 0) {
         index = sliderCourseItems.length;
       }
       index -=1;
-      showImage(sliderCourseItems[index], 4);
-      // sliderCourseItems[index].classList.remove('course__slider-photo_off');
+      showImage(sliderCourseItems[index], 2);
     });
 
 

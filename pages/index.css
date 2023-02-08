@@ -41,6 +41,11 @@
 @import url(../blocks/course/__image/course__image.css);
 @import url(../blocks/course/__image/_position/course__image_position_up.css);
 @import url(../blocks/course/__image/_position/course__image_position_below.css);
+@import url(../blocks/course/__image/_visible/course__image_visible_none.css);
+@import url(../blocks/course/__image/_visible/course__image_visible_yes.css);
+@import url(../blocks/course/__image-button-prev/coorse__image-button-prev.css);
+@import url(../blocks/course/__image-button-next/coorse__image-button-next.css);
+@import url(../blocks/course/__image-button/course__image-button.css);
 @import url(../blocks/course/__subtitle/course__subtitle.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_position/button_position_top.css);
