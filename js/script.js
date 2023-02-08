@@ -16,7 +16,7 @@ const buttonCoursePrev = document.querySelector('.coorse__image-button-prev'); /
 
 const imagesCourseContainer = document.querySelectorAll('.course__image-container > img'); /* забираем селекторы только картинок (в блоке есть еще и кнопки) */
 const imagesCourseItems = Array.from(imagesCourseContainer); /* формируем массив из элементов img? чтобы иметь возможность работать с индексами */
-
+const modificatorVisibleNone = document.querySelector('.course__image_visible_none')
 
 console.log(imagesCourseContainer);
 console.log(imagesCourseItems);
@@ -72,6 +72,9 @@ function showImageCourse(element) {
 function hiddenImageCourse(element) {
   element.classList.remove('course__image_visible_yes');
   element.classList.add('course__image_visible_none');
+  // if (+modificatorVisibleNone.style.opacity == 0) {
+  //   element.classList.add('course__slider-photo_off');
+  // }
 };
 
 
