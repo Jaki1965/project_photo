@@ -54,14 +54,14 @@ const imagesCourse = [
 /* эта функция будет создавать карточу-картинку для заполнения верхнего слайдера*/
 // console.log(imagesCourseContainer);
 
-function createCardCource (){
-  const cardCource = template.querySelector('.course__image').cloneNode(true);
-  cardCource.src = imagesCourse[0].link;
-  cardCource.alt = imagesCourse[0].name;
-  document.querySelector('.course__image-container').prepend(cardCource);
+// function createCardCource (){
+//   const cardCource = template.querySelector('.course__image').cloneNode(true);
+//   cardCource.src = imagesCourse[0].link;
+//   cardCource.alt = imagesCourse[0].name;
+//   document.querySelector('.course__image-container').prepend(cardCource);
   
   // console.log(cardCource);
-}
+//}
 
 createCardCource();
 
