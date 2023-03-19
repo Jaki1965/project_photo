@@ -61,7 +61,7 @@ const imagesCourse = [
 //   document.querySelector('.course__image-container').prepend(cardCource);
   
   // console.log(cardCource);
-//}
+//} ///я добавил фигю для теста добавил
 
 createCardCource();
 
