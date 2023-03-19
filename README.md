@@ -52,6 +52,7 @@
 Работате мягче и правильнее, чем все предыдущие варианты
 * Улучшен слайдер - правильно распределены значения z-index
 * это коммит от Часовникова 
+* это коммит от Часовникова 2
 
 Ссылка на макет Figma [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?t=FgWAfQ4qPhrS7ybL-6)
 
