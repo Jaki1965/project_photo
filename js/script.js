@@ -13,19 +13,64 @@ const pictureCourse = document.querySelector('.course__image'); /* забира�
 const buttonCourse = document.querySelector('.course > button'); /* забиарем селектор большой кнопки в разделе КУРСЫ */
 const buttonCourseNext = document.querySelector('.coorse__image-button-next'); /* забираем селектор кнопки ВПЕРЕД в верхнем слайдере */
 const buttonCoursePrev = document.querySelector('.coorse__image-button-prev'); /* забираем селектор кнопки НАЗАД в верхнем слайдере */
+const template = document.querySelector('#template').content;
+// const img = template.querySelector('.course__image');
 
-const imagesCourseContainer = document.querySelectorAll('.course__image-container > img'); /* забираем селекторы только картинок (в блоке есть еще и кнопки) */
-const imagesCourseItems = Array.from(imagesCourseContainer); /* формируем массив из элементов img? чтобы иметь возможность работать с индексами */
+
+// const imagesCourseContainer = document.querySelectorAll('.course__image-container > img'); /* забираем селекторы только картинок (в блоке есть еще и кнопки) */
+// const imagesCourseItems = Array.from(imagesCourseContainer); /* формируем массив из элементов img? чтобы иметь возможность работать с индексами */
 const modificatorVisibleNone = document.querySelector('.course__image_visible_none')
 
+const courseContainer = document.querySelector('.course__image-container'); /* Забираем селектор контейнера под картинки в верхнем слайдере */
+
+
+const imagesCourse = [
+  {
+    name: 'Ночной Тель Авив',
+    link: 'https://sportishka.com/uploads/posts/2022-04/1650709511_32-sportishka-com-p-tel-aviv-krasivo-foto-36.jpg'
+  },
+  {
+    name: 'Яффо',
+    link: 'https://touristjourney.com/wp-content/uploads/2021/11/Old-Jaffa-Night-Tour-2.jpg'
+  },
+  {
+    name: 'Ночной Рамат-Ган',
+    link: 'https://wikiway.com/upload/hl-photo/195/88f/ramat-gan_9.jpg'
+  },
+  {
+    name: 'Нетания',
+    link: 'https://tvcenter.ru/wp-content/uploads/2022/07/screenshot_526.jpg'
+  },
+  {
+    name: 'Беэр-Шева',
+    link: 'https://exoticluxurycat.ru/wp-content/uploads/1/7/9/17914232bcc1432f68d8898bc2f4dda8.jpeg'
+  },
+  {
+    name: 'Ашдод',
+    link: 'https://proza.ru/pics/2019/04/12/369.jpg'
+  },
+];
+
+/* эта функция будет создавать карточу-картинку для заполнения верхнего слайдера*/
+// console.log(imagesCourseContainer);
+
+function createCardCource (){
+  const cardCource = template.querySelector('.course__image').cloneNode(true);
+  cardCource.src = imagesCourse[0].link;
+  cardCource.alt = imagesCourse[0].name;
+  document.querySelector('.course__image-container').prepend(cardCource);
+  
+  // console.log(cardCource);
+}
+
+createCardCource();
+
+const imagesCourseContainer = document.querySelectorAll('.course__image-container > img');
+const imagesCourseItems = Array.from(imagesCourseContainer);
 console.log(imagesCourseContainer);
-console.log(imagesCourseItems);
 
-
-// console.log(buttonCourseNext);
-// console.log(buttonCoursePrev);
-// console.log(buttonCourse);
-
+console.log(template);
+// console.log(img);
 
 // Создаем функцию, которая будет плано открывать картинку. У функции два параметра element - блок который открываем, speed - скорость с котрой открываем
 
