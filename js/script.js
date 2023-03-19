@@ -1,4 +1,4 @@
-const smoothLinks = document.querySelectorAll('a[href^="#"]'); /* в переменную smoothLinks забираем все теги вида href="#__" */
+// const smoothLinks = document.querySelectorAll('a[href^="#"]'); /* в переменную smoothLinks забираем все теги вида href="#__" */
 const buttonLine = document.querySelector('.header__lines'); /* в переменную buttonLine забираем селектор кнопки из трех полосочек */
 const buttonCross = document.querySelector('.header__cross'); /* в переменную buttonCross забираем селектор кнпки крестика */
 const menuMidleOff = document.querySelector('.header__midle_off'); /* в переменную menuOff забираем селектор модификатора - доп. менб отключено */
@@ -54,14 +54,14 @@ const imagesCourse = [
 /* эта функция будет создавать карточу-картинку для заполнения верхнего слайдера*/
 // console.log(imagesCourseContainer);
 
-// function createCardCource (){
-//   const cardCource = template.querySelector('.course__image').cloneNode(true);
-//   cardCource.src = imagesCourse[0].link;
-//   cardCource.alt = imagesCourse[0].name;
-//   document.querySelector('.course__image-container').prepend(cardCource);
+function createCardCource (){
+  const cardCource = template.querySelector('.course__image').cloneNode(true);
+  cardCource.src = imagesCourse[0].link;
+  cardCource.alt = imagesCourse[0].name;
+  document.querySelector('.course__image-container').prepend(cardCource);
   
-  // console.log(cardCource);
-//} ///я добавил фигю для теста добавил
+  console.log(cardCource);
+} 
 
 createCardCource();
 
